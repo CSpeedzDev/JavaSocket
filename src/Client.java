@@ -8,7 +8,7 @@ public class Client {
 
 
     public void sendMessage() throws IOException {
-        Socket socket = new Socket("127.0.0.1", 1337);
+        Socket socket = ennew Socket("127.0.0.1", 1337);
         PrintWriter printWriter = new PrintWriter(socket.getOutputStream(), true);
         printWriter.println("Hallo");
         InputStreamReader inputStreamReader = new InputStreamReader(socket.getInputStream());
